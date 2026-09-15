@@ -4,4 +4,6 @@ the LangGraph agent reasons over those results plus RAG context,
 and the whole system is accessible through APIs with experiment/model tracking.
 
 
-Information about the SDHAR-HOME dataset on activities of daily living in a multi-resident setting can be found [here](https://github.com/raugom13/SDHAR-HOME-A-Sensor-Dataset-for-Human-Activity-Recognition-at-Home).
+The information about the MuRAL dataset can be found [here](https://jcumin.github.io/datasets).
+
+The information about the REFIT dataset can be found [here]([https://jcumin.github.io/datasets](https://www.kaggle.com/datasets/kyleahmurphy/uk-electrical-load)).
