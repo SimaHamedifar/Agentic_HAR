@@ -6,4 +6,4 @@ and the whole system is accessible through APIs with experiment/model tracking.
 
 The information about the MuRAL dataset can be found [here](https://jcumin.github.io/datasets).
 
-The information about the REFIT dataset can be found [here]([https://jcumin.github.io/datasets](https://www.kaggle.com/datasets/kyleahmurphy/uk-electrical-load)).
+The information about the REFIT dataset can be found in this [link]([https://jcumin.github.io/datasets](https://www.kaggle.com/datasets/kyleahmurphy/uk-electrical-load)).
