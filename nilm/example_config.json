@@ -1,0 +1,53 @@
+{
+  "artifact_dir": "../artifacts/nilm/multi_appliance",
+  "thresholds": {
+    "Television Site": 15,
+    "Toaster": 1000,
+    "Microwave": 200,
+    "Kettle": 2000,
+    "Computer Site": 20,
+    "Washing Machine": 20,
+    "Dishwasher": 10
+  },
+  "data": {
+    "data_file": "../data/REFIT_multi_appliance.csv",
+    "cache_dir": "../artifacts/nilm/refit_cache_8s",
+    "timestamp_column": "Time",
+    "house_column": "house",
+    "feature_columns": [
+      "Aggregate",
+      "Hour_X",
+      "Hour_Y",
+      "DoW_X",
+      "DoW_Y",
+      "is_weekend"
+    ],
+    "appliance_columns": [
+      "Television Site",
+      "Toaster",
+      "Microwave",
+      "Kettle",
+      "Computer Site",
+      "Washing Machine",
+      "Dishwasher"
+    ],
+    "train_houses": [1, 6, 7, 15],
+    "validation_houses": [2, 5],
+    "test_houses": [3, 11],
+    "window_size": 37,
+    "expected_interval_seconds": 8,
+    "gap_tolerance": 4,
+    "stride": 8,
+    "max_rows_per_house": null
+  },
+  "training": {
+    "batch_size": 4096,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.00001,
+    "patience": 5,
+    "num_workers": 0,
+    "seed": 42,
+    "dropout": 0.2
+  }
+}
