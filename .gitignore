@@ -1,0 +1,19 @@
+# Local datasets and archives
+data/
+*.zip
+
+# Generated REFIT cache (approximately 2 GiB)
+artifacts/nilm/refit_cache_8s/
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
