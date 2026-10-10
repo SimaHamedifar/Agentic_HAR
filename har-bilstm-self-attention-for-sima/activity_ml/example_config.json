@@ -1,0 +1,30 @@
+{
+  "artifact_dir": "../artifacts/activity_ml",
+  "data": {
+    "mural_dir": "../data_preprocessing/MuRAL",
+    "train_houses": ["01", "02", "04", "05", "06", "07", "09", "10", "12", "13", "14", "15", "17", "19", "21"],
+    "validation_houses": ["08", "16", "20"],
+    "test_houses": ["03", "11", "18"],
+    "window_size": 10,
+    "stride": 1
+  },
+  "model": {
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "bidirectional": true,
+    "num_attention_heads": 4
+  },
+  "training": {
+    "batch_size": 64,
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "weight_decay": 0.00001,
+    "patience": 8,
+    "num_workers": 0,
+    "seed": 42,
+    "use_class_weights": true,
+    "loss_type": "focal",
+    "focal_gamma": 1.5
+  }
+}
