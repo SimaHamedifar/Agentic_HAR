@@ -1,0 +1,34 @@
+{
+  "data": {
+    "mural_dir": "../Agentic_AI_HAR_Sima/data/MuRAL",
+    "window_size": 10,
+    "train_houses": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "07",
+      "09",
+      "10",
+      "12",
+      "13",
+      "14",
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "validation_houses": [
+      "08",
+      "16",
+      "20"
+    ],
+    "test_houses": [
+      "03",
+      "11",
+      "18"
+    ]
+  },
+  "artifact_dir": "artifacts/activity_ml"
+}

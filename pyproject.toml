@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-har"
+version = "1.0.0"
+description = "MuRAL activity recognition with a BiLSTM, household retrieval, and LangGraph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3",
+    "numpy>=1.26,<3", "pandas>=2.2,<4", "torch>=2.6,<3",
+    "langchain-core>=1.2,<2", "langgraph>=1,<2",
+    "langchain-anthropic>=1.3,<2", "langchain-openai>=1.1,<2",
+    "langchain-pinecone>=0.2.13,<0.3", "pinecone>=7,<8",
+    "python-dotenv>=1,<2",
+]
+
+[project.optional-dependencies]
+training = ["scikit-learn>=1.5,<2", "matplotlib>=3.9,<4"]
+notebook = ["jupyterlab>=4,<5"]
+
+[tool.setuptools.packages.find]
+include = ["agentic_har*"]
+
+[tool.setuptools.package-data]
+agentic_har = ["assets/*.pt"]
